@@ -4,8 +4,12 @@ import ReactDOM from "react-dom";
 import React from "react";
 // Importando CSS
 import "./index.css";
+// Importando primeiro componente
+import Primeiro from "./components/basic/Primeiro.js";
 
-
-const tag = <strong>Ola react</strong>;
-
-ReactDOM.render(<div>{tag}</div>, document.getElementById("root"));
+ReactDOM.render(
+  <div>
+    <Primeiro></Primeiro>
+  </div>,
+  document.getElementById("root")
+);
