@@ -3,7 +3,7 @@ import React from "react";
 // Importando CSS
 import "./index.css";
 // Importando primeiro componente
-import Primeiro from "./components/basic/Primeiro.jsx";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
@@ -15,12 +15,17 @@ import Card from "./components/layout/Card";
 import Familia from "./components/basic/Familia";
 import FamiliaMembro from "./components/basic/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
+import Primeiro from "./components/basic/Primeiro.jsx";
 
 export default () => (
   <div className="App">
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card title="#10 - Comunicação Indireta" color="#FBCB0A">
+        <IndiretaPai></IndiretaPai>
+      </Card>
+
       <Card title="#09 - Comunicação direta" color="#371B58">
         <DiretaPai></DiretaPai>
       </Card>
