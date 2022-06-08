@@ -5,8 +5,9 @@ import "./index.css";
 // Importando primeiro componente
 import Primeiro from "./components/basic/Primeiro.jsx";
 // Segundo component
-import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 import ParOuImpar from "./components/condicional/ParOuImpar";
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
+import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 import ComParametro from "./components/basic/ComParametro";
 import Fragmento from "./components/basic/Fragmento";
 import Aleatorio from "./components/basic/Aleatorio";
@@ -22,6 +23,10 @@ export default () => (
     <div className="Cards">
       <Card title="#08 - Renderização condicional" color="#4C3575">
         <ParOuImpar numero={21}></ParOuImpar>
+        <UsuarioInfo usuario={{ nome: "Pedro" }}></UsuarioInfo>
+        <UsuarioInfo
+          usuario={{ email: "Pedrolucas@hotmail.com  " }}
+        ></UsuarioInfo>
       </Card>
 
       <Card title="#07 - Exercicio Repeticao" color="#4B5D67">
