@@ -3,6 +3,8 @@ import React from "react";
 // Importando CSS
 import "./index.css";
 // Importando primeiro componente
+import Contador from "./components/contador/Contador";
+import Input from "./components/formulario/Input";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import ParOuImpar from "./components/condicional/ParOuImpar";
@@ -22,6 +24,14 @@ export default () => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card title="#12 - Contador" color="#f26419">
+        <Contador numeroInicial={0}></Contador>
+      </Card>
+
+      <Card title="#11 - Componente controlado" color="#33658a">
+        <Input></Input>
+      </Card>
+
       <Card title="#10 - Comunicação Indireta" color="#FBCB0A">
         <IndiretaPai></IndiretaPai>
       </Card>
